@@ -1,5 +1,6 @@
 package com.tacos;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.validation.constraints.Size;
@@ -11,6 +12,14 @@ import lombok.experimental.Accessors;
 
 //@Data
 public class Taco {
+	
+	@Getter
+	@Setter
+	private Long id;
+	
+	@Getter
+	@Setter
+	private Date createdAt;
 	
 	@Getter
 	@Setter
