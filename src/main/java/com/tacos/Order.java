@@ -1,5 +1,6 @@
 package com.tacos;
 
+
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
@@ -28,6 +29,7 @@ public class Order {
 	
 	@CreditCardNumber(message = "Insert a valid credit card number! Or you will be doomed!")
 	private String ccNumber;
+	
 	
 	@Pattern(regexp = "^(0[1-9]|1[0-2])([\\/])([1-9][0-9])$", message = " Wrong format data!")
 	private String ccExpiration;
